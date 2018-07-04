@@ -1,0 +1,26 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Bftr Craft Apsis plugin for Craft CMS 3.x
+ *
+ * Bftr Craft Apsis Settings.twig
+ *
+ * @author    Kristoffer Lundberg
+ * @copyright Copyright (c) 2018 Kristoffer Lundberg
+ * @link      http://bleed.com/
+ * @package   BftrCraftApsis
+ * @since     0.0.1
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("bleed\\bftrcraftapsis\\assetbundles\\bftrcraftapsis\\BftrCraftApsisAsset") %}
+
+{{ forms.textField({
+    label: 'API Key',
+    instructions: 'Enter your Apsis API Key here',
+    id: 'API_KEY',
+    name: 'API_KEY',
+    value: settings['API_KEY']})
+}}

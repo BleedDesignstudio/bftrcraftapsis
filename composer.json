@@ -1,0 +1,40 @@
+{
+    "name": "bleed/bftrcraftapsis",
+    "description": "Integrations between Craft and Apsis",
+    "type": "craft-plugin",
+    "version": "0.0.1",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "bftr craft apsis"
+    ],
+    "support": {
+        "docs": "https://github.com/BleedDesignstudio/bftr-craft-apsis/blob/master/README.md",
+        "issues": "https://github.com/BleedDesignstudio/bftr-craft-apsis/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kristoffer Lundberg",
+            "homepage": "http://bleed.com/"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "bleed\\bftrcraftapsis\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Bftr Craft Apsis",
+        "handle": "bftr-craft-apsis",
+        "hasCpSettings": true,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/BleedDesignstudio/bftr-craft-apsis/master/CHANGELOG.md",
+        "class": "bleed\\bftrcraftapsis\\BftrCraftApsis"
+    }
+}
